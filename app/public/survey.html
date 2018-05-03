@@ -1,0 +1,240 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Find a Friend - Find your perfect match!">
+  <meta name="keywords" content="HTML,CSS,JavaScript,jQuery,Express.js, Node.js,express,node,heroku,github,dating,matching">
+  <meta name="author" content="Russell Rosario">
+
+
+
+  <title>Find a Friend</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon-odnoklassniki.ico" />
+
+  <link rel="stylesheet" href="./assets/style/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4 text-center">Find a Friend</h1>
+      <p class="lead text-center">Survey Questions</p>
+
+      <br>
+
+      <div style="display: inline-block; text-align: left;">
+        <form>
+
+          <div class="form-group">
+            <label for="name" id="form-name-label" class="questionHeader">Name (Required)</label>
+            <input type="text" class="field form-control dropdown" id="submitted-name" required>
+            <label for="name" id="form-pic-label" class="questionHeader">Link to profile picture (Required)</label>
+            <input type="text" class="field form-control dropdown" id="submitted-link" required>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 1</span>
+            <label class="mr-sm-2" for="submitted-q1">I see myself as extraverted, enthusiastic.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q1" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 2</span>
+            <label class="mr-sm-2" for="submitted-q2">I see myself as critical, quarrelsome.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q2" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 3</span>
+            <label class="mr-sm-2" for="submitted-q3">I see myself as dependable, self-disciplined.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q3" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 4</span>
+            <label class="mr-sm-2" for="submitted-q4">I see myself as anxious, easily upset.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q4" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 5</span>
+            <label class="mr-sm-2" for="submitted-q5">I see myself as open to new experiences, complex.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q5" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 6</span>
+            <label class="mr-sm-2" for="submitted-q6">I see myself as reserved, quiet.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q6" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 7</span>
+            <label class="mr-sm-2" for="submitted-q7">I see myself as sympathetic, warm.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q7" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 8</span>
+            <label class="mr-sm-2" for="submitted-q8">I see myself as disorganized, careless.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q8" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 9</span>
+            <label class="mr-sm-2" for="submitted-q9">I see myself as calm, emotionally stable.</label>
+            <select class="custom-select mr-sm-2 dropdown" id="submitted-q9" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="questionHeader">Question 10</span>
+            <label class="mr-sm-2" for="submitted-q10">I see myself as conventional, uncreative.</label>
+            <select class="custom-select mr-sm-2 dropdown dropdown" id="submitted-q10" required>
+              <option selected>Choose...</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2 (Disagree)</option>
+              <option value="3">3 (Neutral)</option>
+              <option value="4">4 (Agree)</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <br>
+          <div class="text-center">
+            <button class="btn btn-primary form-control" id="submit" type="submit" style="width: 25%">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-muted text-center text-small">
+    <p class="mb-1">&copy; 2018 Russell Rosario</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="/api/friends">API Friends List</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://github.com/rosariorussell">GitHub Repo</a>
+      </li>
+    </ul>
+  </footer>
+  </div>
+
+
+  <!-- modal -->
+
+  <div id="friend-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New Best Friend</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id="matchImg">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- jquery, bootstrap js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+
+  <script src="./assets/scripts/index.js"></script>
+
+</body>
+
+</html>

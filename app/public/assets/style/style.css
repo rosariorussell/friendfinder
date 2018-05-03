@@ -1,0 +1,13 @@
+#survey-title {
+    margin-bottom: 20px;
+}
+
+.questionHeader {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    width: 50%;
+    display: block;
+}
